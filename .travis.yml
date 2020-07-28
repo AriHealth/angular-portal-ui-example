@@ -23,7 +23,7 @@ language: node_js
 node_js:
 - "12.13"
 
-# sudo: false
+sudo: false
 
 cache:
   directories:
@@ -38,11 +38,7 @@ env:
     - secure: "c3YXKB5W+gEzQJSL0HhjmRLHY9n7BOsG9OCvqr3w6CUV3/WKd7sXLck0jc2cqU95JRzpLApRGmqxC7VfDeYW8H8OLdZTzGdHPWRuArhSk8nQVWlfnsNv2tMQmtyanIySJrqOVDc+YoGTUwK6g3ILgyZv7pjL9EbOLXhbXtefDfDx106LRfYOToQjOibJzt3a2oDQj5/w2y5kNVDSMctPMP0JclzNjqnfLYpU4G49JisZQxq0IF9P3Z4b6GPDbkvcUiVUg+FlJgOl3yBCmaUAr8DTdVFt20m12eHV7LvO5LwBzPDNMmtlO12+dv6dXlJE9mLbsaQmys7KWigjvQ8zbyGzdt0uipc5R3EMBDYA1B+LmDWZgqWCqDd+bfH58w4enTuH/oHv7rqnHtWlkvqJ+QHkRPLl60iLz+4gnVHRBe0oetPI+dbhNhpu5iCzxwmLgqwZPOTktJBFPpXW/u5KrEWiE2QBDYrjwTTnMEolKJRODYwoQ8Bc9L+HP3U0ldZKQazxeEx4fCNkqMqZMPiSEAiZKlHn2zVIkbIEEozIemFcZb34RuoR0LRVNuK7oSDX+eVRl/9eDQLm95eALJA1LxF1bwFRdxgL49OErAojk3jceDRMeOIACzZU0+7GbdkjCQ/LL16ADiryVhd9rgMu78/douozjjyM68CWhNvYP5A="
   
 addons:
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-stable
+  chrome: stable
   sonarcloud:
     organization: "arihealth"
     token:
