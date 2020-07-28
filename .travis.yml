@@ -50,7 +50,7 @@ install:
 script:
   - if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI --codeCoverage=true; npm run build; fi
   - if [ "$TRAVIS_BRANCH" = "master" ]; then npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI --codeCoverage=true; npm run sonar; fi
-  - if [ "$TRAVIS_BRANCH" = "release" ]; then chmod +x .travis/prepare.sh && .travis/prepare.sh; npm config set tag-version-prefix ''; npm version patch -m "Automatic release increment and changelog generation"; git push --tags; chmod +x .travis/push.sh && .travis/push.sh; fi
+  - if [ "$TRAVIS_BRANCH" = "release" ]; then chmod +x .travis/prepare.sh && .travis/prepare.sh; npm config set tag-version-prefix ''; npm version patch -m "Automatic release increment and changelog generation"; git push --tags; git push origin HEAD:master; fi
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
