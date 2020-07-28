@@ -1,0 +1,61 @@
+# Copyright (C) 2020  Atos Spain SA. All rights reserved.
+# 
+# This file is part of the Angular Portal Example UI.
+# 
+# This file is free software: you can redistribute it and/or modify it under the 
+# terms of the Apache License, Version 2.0 (the License);
+# 
+# http://www.apache.org/licenses/LICENSE-2.0
+# 
+# The software is provided "AS IS", without any warranty of any kind, express or implied,
+# including but not limited to the warranties of merchantability, fitness for a particular
+# purpose and noninfringement, in no event shall the authors or copyright holders be 
+# liable for any claim, damages or other liability, whether in action of contract, tort or
+# otherwise, arising from, out of or in connection with the software or the use or other
+# dealings in the software.
+# 
+# See README file for the full disclaimer information and LICENSE file for full license 
+# information in the project root.
+
+language: node_js
+
+node_js:
+- "12.13"
+- 'lts/*'
+- 'node'
+
+sudo: false
+
+cache:
+  directories:
+    - "$HOME/.sonar/cache"
+    - ./node_modules
+
+env:
+  global:
+    - secure: "EFtIaZywGO4s9LD3O9XepcoHWERmNZmvOp+t1qBpqKcGvN21XnrKOvAKcVWABfB9JYoQsNZ7xH1j8laTEn6zXt69yFK/Zx1mpGbTIDsaMR5SePYV5B49oP1yGoTcBBz8loRHYrF+Crh4YtAFBryUTAYQKrK8kk8O959hQ+XZDZuJktzyl8m2///1GLXHEi1ET7BTAW8rd5vGVwmDm3S0VDSOdERm5y/wXcuWHHL1A8ihgrdVmyOff4eEluSRifUzMp7maD+f7flN06UFNaivnqGaH+DxxMXFAUwElXR5XsFc88z6zubcVI7fjN0SooVBr4ZTZojrN+2caIcHnPXPk14qKAeKdeqc8x5m9GNSxPt08Yb/RKPQx/NhzwDAMivqefH5YmgXXIlsuTkEkoT7qnzzBik59eroH9vQqxLiCsYxgQ2CIMi2Mx0B07+HsvuQsC4Smb0ZfMslNx42lC1Xes2LEWd2ej38e8XEly8tjaAQnAbzSGx2kUGbXwKhulWEiA0tJ2H2zYJmrlD7GJ0DoKVelyVhGX+Z4H7r49Dp/HGmX2orm07a7kj270oyI/EUZKQRWteXXlCgVwe8AhnyEb9MzHcLG3jF0/WnnY5iYwdXc+8OurLDURn0hugLuHgXbGLVinzfX5S5AKXHxpv+80YHhnQY7rjp6iEH2BbJCZE="
+    - secure: "GjljEfiRsnLwPJPR78HjWljzjS1W3sS2t1mZxRL6mS1Saqp5mhHfJ6QQL748jccPvu2PObO+eM0obnfj7In/B6oqLH7zkK51dEiL/vbgOiQOm2SmKFGy6C8vEAUU9jUYKmM84TwcMVl4eT+4WbAS/H4ZHMG0XLWt3NtUaWfiewXWwAftMMhhcM9F4B/nnZJrXds3GWzQ4+PJiGcmibPZs7UuBqksJ14kYkAJkdyyU2eTEv2VotEF87RvPti3fptdDc4JszUr9y1mkEZyykmKyECxVZckFoAh/bQdobQJuFObH9OkBu43j4k+8/ZCwTcigDDb3T2wDkr/HGAsmCUA18r8gs1T4KOB4WJwMeSTcrLsyVTOcLPyOtPNEnB7Bq1o2aEj61azUvXPNVlOJEHSroaJ3j+oqjGtJEzp7Nf6SvoOFj2jZCX/BWT/jOmtu3oItAH1ludHI4tuSzWjJFegAUcPi1c6nWGVaV0hMoVZc6FzdN18A50e2Y8EnjI29Y2HYEn8CU3ADVupZrqZtW38AWlRy8om+NEUFBXuwDs8o2S8596qihG/0KpUMn96B/pvsW8xGkXlWl2+AOLWubz4ZENmfwAZ86kKM1VXUHWYfr43CLBLXmHGZyjhIb9AC5by9WSffKA6is0Wl0SNYOkX+R050/+afb859ggiRui9la8="
+    - secure: "RXX1Ecrip9a2n+doUXuLGOArCm7tmbL2hlSCu3Mmm6gibArt5yJbRg9Q8aVLTIsAft9qIx7ybqfO3HBD0rz9pNRYDJ+37DJNe/6e+9iDsrs+2rCaLh6I0+InxtXVY4FJj2m/cnmsB+gNzQUPYAaMtZxM05Q8LEGdauU826E7kYgj4pyemTDdFC6KKFesUV98YsVoY99LqrtkHmTBkxlSGf3RTBLnWw8bA9qEEQevME3Kib/S/ARNvK9kL/DAXGWHJLCe9qrGt7Z0OYR13zkhjU1PNUvo1MXQwsy+JF3XmQVnLxGYnQPiz8bVx/yaTv3VAyqCeYi9Gs/Uu0yUGLhPhPbL+vludJ9K2lsJ1Msrjq+GAw35DOlODSp84g1o9Li9RYDJyeKfQiSYXO/IsPrk4wUJTilw/h+wZ6KGh61wk/O4qpqZhy8WL/zAwb/um3c/Drg02KmQctbZ5QQXD0iju/KowmNlefbv5f3oGS08tfAYxKk0I0WfrZRi0P5T5txBlX+0A86+2K7WLe8o2Y9MgWWANpTxD+5KyGT2uNUGEc1bkT/XzyFTP19Q/ZrHQekQQreFCpbjHohPAleIcr+xZs9iClcvjcA16TP/CCjehvWRW8NUFeDxRJs7PKzBoIVZ9Oh2p2edu+oQYoOVzPXi7jMuGH9tMLSoJ8NEf19nivs="
+    - secure: "c3YXKB5W+gEzQJSL0HhjmRLHY9n7BOsG9OCvqr3w6CUV3/WKd7sXLck0jc2cqU95JRzpLApRGmqxC7VfDeYW8H8OLdZTzGdHPWRuArhSk8nQVWlfnsNv2tMQmtyanIySJrqOVDc+YoGTUwK6g3ILgyZv7pjL9EbOLXhbXtefDfDx106LRfYOToQjOibJzt3a2oDQj5/w2y5kNVDSMctPMP0JclzNjqnfLYpU4G49JisZQxq0IF9P3Z4b6GPDbkvcUiVUg+FlJgOl3yBCmaUAr8DTdVFt20m12eHV7LvO5LwBzPDNMmtlO12+dv6dXlJE9mLbsaQmys7KWigjvQ8zbyGzdt0uipc5R3EMBDYA1B+LmDWZgqWCqDd+bfH58w4enTuH/oHv7rqnHtWlkvqJ+QHkRPLl60iLz+4gnVHRBe0oetPI+dbhNhpu5iCzxwmLgqwZPOTktJBFPpXW/u5KrEWiE2QBDYrjwTTnMEolKJRODYwoQ8Bc9L+HP3U0ldZKQazxeEx4fCNkqMqZMPiSEAiZKlHn2zVIkbIEEozIemFcZb34RuoR0LRVNuK7oSDX+eVRl/9eDQLm95eALJA1LxF1bwFRdxgL49OErAojk3jceDRMeOIACzZU0+7GbdkjCQ/LL16ADiryVhd9rgMu78/douozjjyM68CWhNvYP5A="
+  
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+  sonarcloud:
+    organization: "arihealth"
+    token:
+      secure: "BaUx3NXR4tA+WYLK/UqLHvoyAkUD+DBtj7kWqC7M6wMEC//Uo6bVPMPYYyhEw4oJ9vp7crF+hq0k+lKEiSiQzh97+jtyR7SVnG8jgFMC8gqM7KDFQkVIsLBi4HJeCRLHriyVYgbBI2Xi3p6NxL3YL8d4+dwM2ZIARz0utJ+ALE/uPwrGZ5MOeYFosGaWhEKy5hL4febMcfd7aqMKkYdMwm4yiqat6ocM+Xd1wa85T21tGnUjFMKHc2QfIH2DZ4H+8060EKbr4LmH5DJzv9zbMkmuKDyB+lwU+zFlUOEogrwqEtlVeZRQXTTDbSSCDkezH0xg0XWLkz1LELOmyPRq3pgDbVjg11uU/9JpOAXd5LYnWbCPwS7njaYthCESrdF3m+JMeLtT/uh04xBUfEEGTkfcD0qfx9liUMzeCdhe44o21S9SSweo7Ay/uEquFOpKaips2FImzQhn7pQvB2cmznhFaALvWB0+MqwjTr3hIZj0qdyeEBI5Mlg6oN8lCw6NlT/0EZedkLvSd9jAA939UUJpRI72zQd0YLtLVp7B/MuuejcHey4gCpeJJnibJwB5gltcPfEK9o/UJfEDULeJgAj8qCFfB9zKIQxRAOI6RQdPaoMsShpxXE5gwhzaO9LvZ5JGuehLsoQ5lyfY94bJp4a9WnfQ3ryR6yKKAtkDHJE="
+
+install:
+  - npm install
+
+script:
+  - if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI; npm run build; fi
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI; npm run sonar; fi
+  - if [ "$TRAVIS_BRANCH" = "release" ]; then chmod +x .travis/prepare.sh && .travis/prepare.sh; npm config set tag-version-prefix ''; npm version patch -m "Automatic release increment and changelog generation"; git push --tags; chmod +x .travis/push.sh && .travis/push.sh; fi
+
+after_success:
+- bash <(curl -s https://codecov.io/bash)
