@@ -1,6 +1,15 @@
-# f4h-portal-ui
+# angular-portal-ui-example
 
-Web user interface for the project [FAIR4Health](https://www.fair4health.eu/).
+[![Build Status](https://travis-ci.org/arihealth/angular-portal-ui-example.svg?branch=master)](https://travis-ci.org/arihealth/angular-portal-ui-example) 
+[![codecov.io](https://codecov.io/gh/arihealth/angular-portal-ui-example/branch/master/graphs/badge.svg)](http://codecov.io/gh/arihealth/angular-portal-ui-example)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=eu.arihealth:angular-portal-ui-example&metric=alert_status)](https://sonarcloud.io/dashboard/index/eu.arihealth:angular-portal-ui-example)
+[![Docker Build](https://img.shields.io/docker/cloud/build/arihealth/angular-portal-ui-example)](https://cloud.docker.com/u/ccavero/repository/docker/arihealth/angular-portal-ui-example)
+[![Docker Pulls](https://img.shields.io/docker/pulls/arihealth/angular-portal-ui-example)](https://cloud.docker.com/u/ccavero/repository/docker/arihealth/angular-portal-ui-example)
+[![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
+
+# Description
+
+Example Angular web user interface with CICD
 
 ## Command line options
 
